@@ -58,23 +58,8 @@ consumer ratings of the hotel, ultimately causing a severe negative impact on ho
 https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?resource=download
 사용할 데이터는 kaggle에 있는 515K Hotel Reviews Data in Europe의 데이터를 사용할 것입니다만 데이터의 수가 51만개로 너무나 방대하기 떄문에 5만개만 따로 추출하는 과정을 거칠 것입니다
    
-Hotel_Name
-Britannia International Hotel Canary Wharf           4789
-Strand Palace Hotel                                  4256
-Park Plaza Westminster Bridge London                 4169
-Copthorne Tara Hotel London Kensington               3578
-DoubleTree by Hilton Hotel London Tower of London    3212
-Grand Royale London Hyde Park                        2958
-Holiday Inn London Kensington                        2768
-Hilton London Metropole                              2628
-Millennium Gloucester Hotel London                   2565
-Intercontinental London The O2                       2551
-Park Grand Paddington Court                          2288
-Hilton London Wembley                                2227
-Park Plaza County Hall London                        2223
-Blakemore Hyde Park                                  2178
-Park Plaza London Riverbank                          2167
-Name: count, dtype: int64
+![image](https://github.com/minsu0818/dataanalyze/assets/144076842/46104985-2120-42fa-a248-26abdccf52e1)
+
 
 
 
