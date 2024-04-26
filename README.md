@@ -82,6 +82,8 @@ https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?res
 ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/1183677c-8a43-4fd7-b99c-2573106e3597)
 ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/996bf40e-ef32-4cd5-bcab-038c8f6393a9)
 
+* 리뷰에 따른 정렬 
+![image](https://github.com/minsu0818/dataanalyze/assets/144076842/4a86c89a-50d9-4432-a686-24538a9c68e3)
 
 
 * a
