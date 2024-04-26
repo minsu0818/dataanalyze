@@ -54,7 +54,44 @@ consumer ratings of the hotel, ultimately causing a severe negative impact on ho
 이렇듯 런던은 런던아이와 버킹엄 궁전과 같은 세계적인 관광지로 이름 나있다고 합니다. 그렇기 때문에 년에 몇백, 몇천만명의 관광객들이 다녀가는 런던에 호텔이나 모텔과 같은 숙박업이 많이 발달을 한 도시입니다. 
 숙박업이 많이 발달한 도시인 만큼 호텔도 많기 때문에  리뷰 또한 많습니다. 리뷰가 많다면 긍정적인 리뷰와 부정적인 리뷰가 둘다 많다는 건데 이것들이 호텔에 영향을 얼마나 끼치는 알아 보기 위해 저는 mobile bert를 이용한 런던 호텔 리뷰의 긍부정을 해볼까 합니다   
    
-### 1.1 호텔 리뷰가 미치는 영향 
+### 1.3 사용할 데이터
+https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?resource=download
+사용할 데이터는 kaggle에 있는 515K Hotel Reviews Data in Europe의 데이터를 사용할 것입니다만 데이터의 수가 51만개로 너무나 방대하기 떄문에 5만개만 따로 추출하는 과정을 거칠 것입니다
+   
+Hotel_Name
+Britannia International Hotel Canary Wharf           4789
+Strand Palace Hotel                                  4256
+Park Plaza Westminster Bridge London                 4169
+Copthorne Tara Hotel London Kensington               3578
+DoubleTree by Hilton Hotel London Tower of London    3212
+Grand Royale London Hyde Park                        2958
+Holiday Inn London Kensington                        2768
+Hilton London Metropole                              2628
+Millennium Gloucester Hotel London                   2565
+Intercontinental London The O2                       2551
+Park Grand Paddington Court                          2288
+Hilton London Wembley                                2227
+Park Plaza County Hall London                        2223
+Blakemore Hyde Park                                  2178
+Park Plaza London Riverbank                          2167
+Name: count, dtype: int64
+
+
+
+데이터를 불러와서 리뷰수가 더 많은 호텔의 리뷰에 관한 신뢰도가 높을 것 같아서, 호텔의 리뷰수의 갯수에 관해 내리차순으로 정렬하여 15개의 상위 항목만 뽑은 결과입니다. 여기 적혀있는 모든 호텔들은 런던에 존재하는 호텔들로 총 데이터의 갯수도 5만개로 적당합니다. 물론 위에 적혀있는 호텔들이 런던에 있는 호텔들의 전부는 아니지만 이 이상 호텔의 수를 늘리면 데이터의 갯수도 증가하기 떄문에 포기하고 위의 15개만의 호텔로 작업을 진행할 것입니다.
+
+## 2. 데이터 들여다 보기
+
+### 2.1 데이터 구성 
+* 데이터   
+'Hotel_Address', 'Additional_Number_of_Scoring', 'Review_Date',
+       'Average_Score', 'Hotel_Name', 'Reviewer_Nationality',
+       'Negative_Review', 'Review_Total_Negative_Word_Counts',
+       'Total_Number_of_Reviews', 'Positive_Review',
+       'Review_Total_Positive_Word_Counts',
+       'Total_Number_of_Reviews_Reviewer_Has_Given', 'Reviewer_Score', 'Tags',
+       'days_since_review', 'lat', 'lng'
+
 
 * a
   * aa
