@@ -113,4 +113,5 @@ https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?res
   *그래프를 분석해 보면 일정 경향성을 갖추지 않고 마구잡이로 난잡하게 그려진 것을 볼 수 있는데 이러한 경우들은 긍정적인 단어를 포함한 리뷰가 많았지만 리뷰 평점은 부정적이었거나
    부정적인 단어를 포함한 리뷰가 많았지만 리뷰 평점은 긍정적이었던 경우라고 생각합니다.<br/>
    
-
+* 호텔 기간별 평균 평점
+  1. Britannia International Hotel Canary Wharf	
