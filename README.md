@@ -108,7 +108,8 @@ https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?res
 
    ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/2ac0c15d-ee96-43a9-bad3-8175dbf6408c)
 
-* a
+     * 긍정적 단어수에서 부정적인 단어수를 뺐을떄 x축의 값이 양수이면 긍정적인 단어를 포함한 리뷰가 많았던거고 음수이면 부정적인 단어를 포함한 리뷰였던것을  알 수 있었습니다. 그에 따른 평점 분포를 나타낸 그래프입니다
+.* a
   * aa
     * aaa
 - b
