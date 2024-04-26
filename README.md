@@ -21,7 +21,9 @@ with specific and meaningful information have a more pronounced influence on con
 --Research on the Impact of Online Reviews on Hotel
 Selection for Travelers 논문에서 일부 발췌
 
-실제로 호텔 리뷰가 호텔을 예약할때 영향을 주는지 관해 적은 논문입니다. 요약을 해보자면 세밀하고 자세한 리뷰일수록 호텔 부킹에 더 큰 영향을 준다는 내용입니다.  
+실제로 호텔 리뷰가 호텔을 예약할때 영향을 주는지에 관해서 적은 논문입니다. 요약을 해보자면 세밀하고 자세한 리뷰일수록 호텔 부킹에 더 큰 영향을 준다는 내용입니다. 이외에도 많은 양의 리뷰와 긍부정적인 리뷰들이 영향을 준다는 내용이 담겨있습니다   
+
+이렇듯 호텔 리뷰는 호텔을 예약하는 사람으로 하여금 좋은 참고 자료가 되어준다는 것을 알 수 있습니다.
 
 * a
   * aa
