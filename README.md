@@ -114,4 +114,9 @@ https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?res
    부정적인 단어를 포함한 리뷰가 많았지만 리뷰 평점은 긍정적이었던 경우라고 생각합니다.<br/>
    
 * 호텔 기간별 평균 평점
-  1. Britannia International Hotel Canary Wharf	
+  오래된 리뷰 평점: 호텔 리뷰의 데이터 중 가장 끝에 있는 데이터의 날짜에서부터 전체 데이터의 중간에 위치 하는 데이터까지의 전체 평균<br/>
+  새로운 리뷰 평점: 호텔 리뷰의 데이터 중 가장 끝에 있는 데이터의 날짜에서부터 전체 데이터의 가장 처음에 위치 하는 데이터까지의 전체 평균<br/>
+  평점 증가량 : 새로운 리뷰 평점 - 오래된 리뷰 평점<br/>
+  ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/3beee1b8-8527-4bf7-9aac-b263d46efb7d)
+
+     
