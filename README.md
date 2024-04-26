@@ -21,7 +21,7 @@ promotion and positively influences consumer decision-making. More positive revi
 56 more new customers to book the hotel, resulting in a long-term and stable increase in hotel bookings.  
 --Research on the Impact of Online Reviews on Hotel Selection for Travelers 논문에서 일부 발췌
 
-긍정적인 리뷰는 호텔의 긍적적인 브랜드 이미지와 관련이 되며 호텔 부킹에도 긍정적인 영향을 끼친다고 합니다.    
+긍정적인 리뷰는 호텔의 긍적적인 브랜드 이미지와 관련이 되며 호텔 부킹에도 긍정적인 영향을 끼친다고 합니다.
 실제로 이 논문의 연구에서도 많은 긍정적인 리뷰가 있는 호텔은 56명의 신규 손님이 생겼다고 했습니다
 
 Negative reviews have a significant impact on consumer hotel booking decisions.
