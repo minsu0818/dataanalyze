@@ -93,7 +93,7 @@ https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?res
 ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/bdf445ee-71e7-4072-8814-95cb09607a24)
 전체적인 평점 분포는 이렇게 되어있습니다. 하지만 가시성이 너무나 떨어지는 데이터이기 때문에 따로 기준을 잡아서 데이터를 수정하도록 하겠습니다.
   * 평점 데이터 수정   
-    평점이 2.5점 보다 적은 것을 bad
+    평점이 2.5점 보다 적은 것을 bad   
     평점이 2.5점과 5점 사이인 것을 average
     평점이 5점과 7.5점 사이인 것을 good
     평점이 7.5과 10점 사이인 것을 very good라고 합니다
