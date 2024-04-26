@@ -94,6 +94,8 @@ Name: count, dtype: int64
 
 * 데이터 구조 예시
   ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/b160360b-6cda-4c79-b3d9-52bea077de0d)
+  ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/1b4e5d64-fcf5-4baf-a7f6-425bc0a99c82)
+
 
 * a
   * aa
