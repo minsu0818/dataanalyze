@@ -102,6 +102,7 @@ https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?res
 
     ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/4728e6bf-1818-4d6c-ad85-d40c4e4eca1e)
 
+    수정 후 데이터를 봤을떄 평점이 2.5점이 이하인 호텔은 아예 없고 대부분의 호텔들이 평점들이 좋다는 사실을 알수 있었습니다
 * a
   * aa
     * aaa
