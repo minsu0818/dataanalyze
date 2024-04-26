@@ -14,14 +14,27 @@
 
 ### 1.1 호텔 리뷰가 미치는 영향 
 
-(1) Higher quality reviews have a greater impact on consumer hotel bookings.
-The analysis in this study indicates that authentic and informative post-stay reviews significantly
-attract consumers' attention and provide a basis for decision-making when choosing a hotel. Reviews
-with specific and meaningful information have a more pronounced influence on consumer decisions.    
---Research on the Impact of Online Reviews on Hotel
-Selection for Travelers 논문에서 일부 발췌
+Positive reviews have a significant impact on consumer hotel booking decisions.
+Consistent with the findings of the majority of researchers, positive online reviews contribute to
+establishing a positive brand image for hotels. Positive user reputation leads to word-of-mouth
+promotion and positively influences consumer decision-making. More positive reviews also attract
+56 more new customers to book the hotel, resulting in a long-term and stable increase in hotel bookings.  
+--Research on the Impact of Online Reviews on Hotel Selection for Travelers 논문에서 일부 발췌
 
-실제로 호텔 리뷰가 호텔을 예약할때 영향을 주는지에 관해서 적은 논문입니다. 요약을 해보자면 세밀하고 자세한 리뷰일수록 호텔 부킹에 더 큰 영향을 준다는 내용입니다. 이외에도 많은 양의 리뷰와 긍부정적인 리뷰들이 영향을 준다는 내용이 담겨있습니다   
+긍정적인 리뷰는 호텔의 긍적적인 브랜드 이미지와 관련이 되며 호텔 부킹에도 긍정적인 영향을 끼친다고 합니다.    
+실제로 이 논문의 연구에서도 많은 긍정적인 리뷰가 있는 호텔은 56명의 신규 손님이 생겼다고 했습니다
+
+Negative reviews have a significant impact on consumer hotel booking decisions.
+Negative online reviews have a substantial impact on consumer hotel booking decisions. Due to
+the inherent risks in the hotel booking process, consumers extensively browse online reviews before
+making their bookings. Excessive negative information about a hotel has a serious influence on
+consumer decisions. An excessive number of negative reviews also leads to a decline in overall
+consumer ratings of the hotel, ultimately causing a severe negative impact on hotel bookings. 
+--Research on the Impact of Online Reviews on Hotel Selection for Travelers 논문에서 일부 발췌
+
+부정적인 리뷰는 손님의 호텔 결정에 안 좋은 영향을 끼친다고 합니다. 
+손님들은 대게 호텔에 관한 리스크를 줄이기 위해 호텔에 관한 사전조사를 진행합니다. 
+이때 대표적으로 살펴보는 것이 호텔 리뷰인데 부정적인 리뷰는 부킹을 하는 사람으로 하여금 그 호텔을 기피하게 하여 호텔의 손님이 줄어들게 한다고 합니다
 
 이렇듯 호텔 리뷰는 호텔을 예약하는 사람으로 하여금 좋은 참고 자료가 되어준다는 것을 알 수 있습니다.
 
