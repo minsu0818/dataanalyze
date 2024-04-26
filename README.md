@@ -68,7 +68,7 @@ https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?res
 ## 2. 데이터 들여다 보기
 
 ### 2.1 데이터 구성 
-* 데이터명
+* 데이터 열 이름    
 'Hotel_Address', 'Additional_Number_of_Scoring', 'Review_Date',
        'Average_Score', 'Hotel_Name', 'Reviewer_Nationality',
        'Negative_Review', 'Review_Total_Negative_Word_Counts',
