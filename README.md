@@ -96,7 +96,7 @@ https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?res
     평점이 2.5점 보다 적은 것을 bad   
     평점이 2.5점과 5점 사이인 것을 average   
     평점이 5점과 7.5점 사이인 것을 good   
-    평점이 7.5과 10점 사이인 것을 very good
+    평점이 7.5과 10점 사이인 것을 very good   
     이렇게 설정을 하고 데이터를 다시 시각화 합니다
 * a
   * aa
