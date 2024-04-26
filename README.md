@@ -17,7 +17,7 @@
 (1) Higher quality reviews have a greater impact on consumer hotel bookings.
 The analysis in this study indicates that authentic and informative post-stay reviews significantly
 attract consumers' attention and provide a basis for decision-making when choosing a hotel. Reviews
-with specific and meaningful information have a more pronounced influence on consumer decisions. /br
+with specific and meaningful information have a more pronounced influence on consumer decisions.    
 --Research on the Impact of Online Reviews on Hotel
 Selection for Travelers 논문에서 일부 발췌
 
