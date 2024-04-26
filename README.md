@@ -99,6 +99,9 @@ https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?res
     평점이 7.5과 10점 사이인 것을 very good
              
     이렇게 설정을 하고 데이터를 다시 시각화 합니다
+
+    ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/4728e6bf-1818-4d6c-ad85-d40c4e4eca1e)
+
 * a
   * aa
     * aaa
