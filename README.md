@@ -83,7 +83,7 @@ Name: count, dtype: int64
 ## 2. 데이터 들여다 보기
 
 ### 2.1 데이터 구성 
-* 데이터   
+* 데이터명
 'Hotel_Address', 'Additional_Number_of_Scoring', 'Review_Date',
        'Average_Score', 'Hotel_Name', 'Reviewer_Nationality',
        'Negative_Review', 'Review_Total_Negative_Word_Counts',
@@ -92,6 +92,8 @@ Name: count, dtype: int64
        'Total_Number_of_Reviews_Reviewer_Has_Given', 'Reviewer_Score', 'Tags',
        'days_since_review', 'lat', 'lng'
 
+* 데이터 구조 예시
+  ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/b160360b-6cda-4c79-b3d9-52bea077de0d)
 
 * a
   * aa
