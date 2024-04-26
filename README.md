@@ -86,6 +86,10 @@ https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?res
 ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/4a86c89a-50d9-4432-a686-24538a9c68e3)
 
 
+* 평점에 따른 데이터 분포
+  * 수치적 분포
+    *![image](https://github.com/minsu0818/dataanalyze/assets/144076842/a60fd30e-dfc7-4595-a5ba-cc8deafb72f9)
+
 * a
   * aa
     * aaa
