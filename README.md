@@ -85,10 +85,12 @@ https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?res
 * 리뷰에 따른 정렬 
 ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/4a86c89a-50d9-4432-a686-24538a9c68e3)
 
+데이터의 전체적인 구성은 이렇게 구성되어있다
+
+### 2.2 데이터 시각화 
 
 * 평점에 따른 데이터 분포
-  * 수치적 분포
-    *![image](https://github.com/minsu0818/dataanalyze/assets/144076842/a60fd30e-dfc7-4595-a5ba-cc8deafb72f9)
+  *![image](https://github.com/minsu0818/dataanalyze/assets/144076842/bdf445ee-71e7-4072-8814-95cb09607a24)
 
 * a
   * aa
