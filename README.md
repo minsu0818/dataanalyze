@@ -80,7 +80,7 @@ https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?res
 * 데이터 구조 예시
 ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/e3d67665-5d29-4d9b-bfc6-d9beea8a2af7)
 ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/1183677c-8a43-4fd7-b99c-2573106e3597)
-
+(44557, 17)
 
 
 * a
