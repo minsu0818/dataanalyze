@@ -56,7 +56,10 @@ consumer ratings of the hotel, ultimately causing a severe negative impact on ho
 https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?resource=download
 사용할 데이터는 kaggle에 있는 515K Hotel Reviews Data in Europe의 데이터를 사용할 것입니다만 데이터의 수가 51만개로 너무나 방대하기 떄문에 5만개만 따로 추출하는 과정을 거칠 것입니다
    
-![image](https://github.com/minsu0818/dataanalyze/assets/144076842/46104985-2120-42fa-a248-26abdccf52e1)
+![image](https://github.com/minsu0818/dataanalyze/assets/144076842/46104985-2120-42fa-a248-26abdccf52e1)<br/>
+
+![image](https://github.com/minsu0818/dataanalyze/assets/144076842/4a86c89a-50d9-4432-a686-24538a9c68e3)<br/>
+
 
 
 
@@ -80,10 +83,6 @@ https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?res
 ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/1183677c-8a43-4fd7-b99c-2573106e3597)
 ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/996bf40e-ef32-4cd5-bcab-038c8f6393a9)
 
-* 리뷰에 따른 정렬 
-![image](https://github.com/minsu0818/dataanalyze/assets/144076842/4a86c89a-50d9-4432-a686-24538a9c68e3)
-
-데이터의 전체적인 구성은 이렇게 구성되어있다
 
 ### 2.2 데이터 시각화 
 
