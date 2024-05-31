@@ -15,8 +15,9 @@
 
 ## 1. 서론
 
-### 1.1 호텔 리뷰가 미치는 영향 
+### 1.1 숙박 산업과 사용자의 리뷰
 
+>
 Positive reviews have a significant impact on consumer hotel booking decisions.
 Consistent with the findings of the majority of researchers, positive online reviews contribute to
 establishing a positive brand image for hotels. Positive user reputation leads to word-of-mouth
