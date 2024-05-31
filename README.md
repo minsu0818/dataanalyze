@@ -17,6 +17,8 @@
 
 ### 1.1 숙박 산업과 사용자의 리뷰
 
+코로나 펜데믹으로 인해서 숙박 산업이 큰 타격을 입었다. (언론기사 손실 인용) 그런데 코로나가 종식된 2023년 부터는 숙박 산업이 회복세이 이르면서, 수요가 증가하는 현상을 보였다. 호캉스라는 말도생겼다
+
 
 > Positive reviews have a significant impact on consumer hotel booking decisions.
 Consistent with the findings of the majority of researchers, positive online reviews contribute to
@@ -25,20 +27,9 @@ promotion and positively influences consumer decision-making. More positive revi
 56 more new customers to book the hotel, resulting in a long-term and stable increase in hotel bookings.  
 --Research on the Impact of Online Reviews on Hotel Selection for Travelers 논문에서 일부 발췌
 
-긍정적인 리뷰는 호텔의 긍적적인 브랜드 이미지와 관련이 되며 호텔 부킹에도 긍정적인 영향을 끼친다고 합니다.
-실제로 이 논문의 연구에서도 많은 긍정적인 리뷰가 있는 호텔은 56명의 신규 손님이 생겼다고 했습니다
+긍정적인 리뷰는 호텔의 긍적적인 브랜드 이미지와 관련이 되며 호텔 부킹에도 긍정적인 영향을 끼친다고 한다.
+실제로 이 논문의 연구에서도 많은 긍정적인 리뷰가 있는 호텔은 56명의 신규 손님이 생겼다고 했다.
 
-Negative reviews have a significant impact on consumer hotel booking decisions.
-Negative online reviews have a substantial impact on consumer hotel booking decisions. Due to
-the inherent risks in the hotel booking process, consumers extensively browse online reviews before
-making their bookings. Excessive negative information about a hotel has a serious influence on
-consumer decisions. An excessive number of negative reviews also leads to a decline in overall
-consumer ratings of the hotel, ultimately causing a severe negative impact on hotel bookings. 
---Research on the Impact of Online Reviews on Hotel Selection for Travelers 논문에서 일부 발췌
-
-부정적인 리뷰는 손님의 호텔 결정에 안 좋은 영향을 끼친다고 합니다. 
-손님들은 대게 호텔에 관한 리스크를 줄이기 위해 호텔에 관한 사전조사를 진행합니다. 
-이때 대표적으로 살펴보는 것이 호텔 리뷰인데 부정적인 리뷰는 부킹을 하는 사람으로 하여금 그 호텔을 기피하게 하여 호텔의 손님이 줄어들게 한다고 합니다
 
 이렇듯 호텔 리뷰는 호텔을 예약하는 사람에게 많은 영향을 준다는 것을 알 수 있습니다.
 
