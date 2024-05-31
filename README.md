@@ -1,3 +1,5 @@
+![header] ![80632473_1713854345213_37_600x600](https://github.com/minsu0818/dataanalyze/assets/144076842/e8006771-f4f5-4537-ad4d-dea8d1f3208f)
+
 ## MobileBERT를 활용한 런던의 호텔 리뷰 분석
 
 ## [목차]
