@@ -17,8 +17,8 @@
 
 ### 1.1 숙박 산업과 사용자의 리뷰
 
->
-Positive reviews have a significant impact on consumer hotel booking decisions.
+
+> Positive reviews have a significant impact on consumer hotel booking decisions.
 Consistent with the findings of the majority of researchers, positive online reviews contribute to
 establishing a positive brand image for hotels. Positive user reputation leads to word-of-mouth
 promotion and positively influences consumer decision-making. More positive reviews also attract
