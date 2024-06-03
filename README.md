@@ -1,4 +1,4 @@
- ![80632473_1713854345213_37_600x600](https://github.com/minsu0818/dataanalyze/assets/144076842/e8006771-f4f5-4537-ad4d-dea8d1f3208f)
+![80632473_1713854345213_37_600x600](https://github.com/minsu0818/dataanalyze/assets/144076842/e8006771-f4f5-4537-ad4d-dea8d1f3208f)
 
 # MobileBERT를 활용한 런던의 호텔 리뷰 분석
 
@@ -86,12 +86,56 @@ promotion and positively influences consumer decision-making. More positive revi
 |2|s Gravesandestraat 55 Oost 1092 AA Amsterdam Netherlands|194|8/3/2017|7.7|Hotel Arena|Ireland|"No Negative"|0|1403|"No real complaints the hotel was great great ..."|105|7|7.5|[' Leisure trip ', ' Couple ', ' Duplex Double Room ', ' Stayed 3 nights ']|0 days|52.360576|4.915968|
 |3|s Gravesandestraat 55 Oost 1092 AA Amsterdam Netherlands|194|7/31/2017|7.7|Hotel Arena|Australia|"Rooms are nice but for elderly a bit difficult..."|42|1403|"Location was good and staff were ok It is cut..."|21|9|7.1|[' Leisure trip ', ' Family with young children ', ' Duplex Double Room ', ' Stayed 3 nights ']|3 days|52.360576|4.915968|
 |..|...|...|.....|.....|...|...|..|
-|515735|Example Address 1|194|8/3/2017|7.7|Hotel Example|Russia|"Negative review example..."|397|1403|"Positive review example..."|11|7|2.9|[' Leisure trip ', ' Couple ', ' Duplex Double Room ', ' Stayed 3 nights ']|0 days|52.360576|4.915968|
-|515736|Example Address 2|194|8/3/2017|7.7|Hotel Example|Ireland|"Negative review example..."|0|1403|"Positive review example..."|105|7|7.5|[' Leisure trip ', ' Couple ', ' Duplex Double Room ', ' Stayed 3 nights ']|0 days|52.360576|4.915968|
-|515737|Example Address 3|194|7/31/2017|7.7|Hotel Example|Australia|"Negative review example..."|42|1403|"Positive review example..."|21|9|7.1|[' Leisure trip ', ' Family with young children ', ' Duplex Double Room ', ' Stayed 3 nights ']|3 days|52.360576|4.915968|<br/>
+|515737|Wurzbachgasse 21 15 Rudolfsheim F nfhaus 1150 Vienna|168|8/9/2015	|8.1|Atlantis Hotel Vienna	|Hungary|"I was in 3rd floor It didn t work Free Wife	"|13|2823|"staff was very kind"|6|1|8.3|[' Leisure trip ', ' Family with young children ', ' 2 rooms ', ' Stayed 2 nights ']|725 days|48.203745|16.335677|
+<br/>
 
 도시별로 호텔의 분포<br/><br/>
 ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/087e9519-7ed1-48f8-8507-13c5f2db6ebb)
+
+
+### 2.1 추출 데이터<br/>
+
+도시별 호텔 데이터에서 런던을 추출하여 분석을 진행하고 자한다.<br/><br/>
+
+런던에 있는 호텔의 총 갯수<br/>
+| City   | Unique Hotels |
+|--------|---------------|
+| London | 400           |<br/>
+
+런던에 있는 각 호텔들의 리뷰수 
+![image](https://github.com/minsu0818/dataanalyze/assets/144076842/48bbbeca-8599-40cc-b975-1842806466e0)<br/>
+데이터의 갯수는 26만개이다.<br/>
+
+위 그래프를 보면 데이터의 갯수도 너무 많고 쓸모 없는 데이터도 너무 많기 때문에 데이터에 기준을 정하여 추출을 하겠다.<br/><br/>
+
+
+
+런던의 호텔의 리뷰 수 상위 15개만 추출 
+|Index|Hotel_Name|Count|
+|-|----------|-----|
+|1|Britannia International Hotel Canary Wharf|4789|
+|2|Strand Palace Hotel|4256|
+|3|Park Plaza Westminster Bridge London|4169|
+|4|Copthorne Tara Hotel London Kensington|3578|
+|5|DoubleTree by Hilton Hotel London Tower of London|3212|
+|6|Grand Royale London Hyde Park|2958|
+|7|Holiday Inn London Kensington|2768|
+|8|Hilton London Metropole|2628|
+|9|Millennium Gloucester Hotel London|2565|
+|10|Intercontinental London The O2|2551|
+|11|Park Grand Paddington Court|2288|
+|12|Hilton London Wembley|2227|
+|13|Park Plaza County Hall London|2223|
+|14|Blakemore Hyde Park|2178|
+|15|Park Plaza London Riverbank|2167|<br/>
+
+위 15개의 호텔들의 리뷰수 총합이 대략 5만개로 학습을 진행하기 적합한 갯수이다. <br/><br/>
+
+호텔 위치 <br/>
+![image](https://github.com/minsu0818/dataanalyze/assets/144076842/444aba63-7d37-43ad-a4eb-c4df88ebb01a)<br/>
+겹친 지점 상세 보기 <br/>
+![image](https://github.com/minsu0818/dataanalyze/assets/144076842/fcb15d38-846e-4797-a5aa-c32368c2c87a)
+
 
 
 
@@ -114,21 +158,19 @@ promotion and positively influences consumer decision-making. More positive revi
 
 * 긍부정 단어 수의 차이에 따른 평점 분포
 
-   ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/2ac0c15d-ee96-43a9-bad3-8175dbf6408c)
-
-  *긍정적 단어수에서 부정적인 단어수를 뺐을떄 x축의 값이 양수이면 긍정적인 단어를 포함한 리뷰가 많았던거고 음수이면 부정적인 단어를 포함한 리뷰였던것을  알 수 있었습니다. 그에 따른 평점 분포를 나타낸 그래프입니다<br/>
-     
-  *그래프를 분석해 보면 일정 경향성을 갖추지 않고 마구잡이로 난잡하게 그려진 것을 볼 수 있는데 이러한 경우들은 긍정적인 단어를 포함한 리뷰가 많았지만 리뷰 평점은 부정적이었거나
-   부정적인 단어를 포함한 리뷰가 많았지만 리뷰 평점은 긍정적이었던 경우라고 생각합니다.<br/>
-   
+   ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/6a49031e-1ec3-4d64-bd9c-f80b63a59cbc)<br/>
+  * 긍정적 단어수에서 부정적인 단어수를 뺐을떄 x축의 값이 양수이면 긍정적인 단어를 포함한 리뷰가 많았던거고 음수이면 부정적인 단어를 포함한 리뷰였던것을  알 수 있었습니다. 그에 따른 평점 분포를 나타낸 그래프입니다<br/>
+  
+  * 긍부정 단어 수의 차이의 수와 평점간의 상관 계수는 0.45로 서로간의 관계가 별로 없다는 것을 알 수 있었다.
+       
 * 전체 문장의 단어수에 따른 평점 분포
 
-  ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/d30a23e2-ccb9-463a-ac5c-cc2f91f227e6)
+  ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/cd684b63-4151-486f-bf82-fd78cbc9f18c)<br/>
+  * 각 문장의 전체의 단어수에 따른 평점 분포를 나타낸 그래프입니다<br/>
 
-
-  *각 문장의 전체의 단어수에 따른 평점 분포를 나타낸 그래프입니다<br/>
+  * 각 문장의 전체의 단어수와 평점간의 상관계수는 -0.19로 서로 별로 영향을 주지 못하고 있다는 것을 알 수 있다.
+  
      
-  *그래프를 분석해 보면 일정 경향성을 갖추지 않고 마구잡이로 난잡하게 그려져 있는 것을 보아 문장의 길이는 리뷰의 평점과 아무런 연관이 없다는 것을 알 수 있습니다.<br/>
   
 * 호텔 기간별 평균 평점<br/>
   오래된 리뷰 평점: 호텔 리뷰의 데이터 중 가장 끝에 있는 데이터의 날짜에서부터 전체 데이터의 중간에 위치 하는 데이터까지의 전체 평균<br/>
