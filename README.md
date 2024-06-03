@@ -233,7 +233,7 @@ pn을 새로운 기준을 새워 다시 라벨링을 해보니 데이터의 갯�
 * 학습 데이터<br/>
 
 
-  | Negpos |   pn |
+| Negpos |   pn |
 |-----------------|----|
 |We travelled from Australia and spent a total... | 0|
 |  We were put in a room at the back of the hote...|1|
