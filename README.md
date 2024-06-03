@@ -83,10 +83,14 @@ https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?res
 ## 2. 데이터 들여다 보기
 
 ### 2.1 데이터 구성 
-* 데이터 열 이름    
+* 데이터 열 이름
+ 
 |Hotel_Address|Additional_Number_of_Scoring|Review_Date|Average_Score|Hotel_Name|Reviewer_Nationality|Negative_Review|Review_Total_Negative_Word_Counts|Total_Number_of_Reviews|Positive_Review|Review_Total_Positive_Word_Counts|Total_Number_of_Reviews_Reviewer_Has_Given|Reviewer_Score|Tags|days_since_review|lat|lng|
 |--------------|-----------------------------|------------|--------------|----------|---------------------|----------------|------------------------------|----------------------|---------------|-------------------------------|------------------------------------------|--------------|-----|------------------|---|---|
 |호텔 주소|추가 점수 수|리뷰 작성 날짜|평균 점수|호텔 이름|리뷰어 국적|부정적 리뷰 내용|부정적 리뷰 단어 수|리뷰 총 개수|긍정적 리뷰 내용|긍정적 리뷰 단어 수|리뷰어가 작성한 총 리뷰 수|리뷰어 점수|태그|리뷰 작성 후 경과 일수|위도|경도|<br/>
+
+
+
 * 데이터 구조 예시
 |-|Hotel_Address|Additional_Number_of_Scoring|Review_Date|Average_Score|Hotel_Name|Reviewer_Nationality|Negative_Review|Review_Total_Negative_Word_Counts|Total_Number_of_Reviews|Positive_Review|Review_Total_Positive_Word_Counts|Total_Number_of_Reviews_Reviewer_Has_Given|Reviewer_Score|Tags|days_since_review|lat|lng|
 |-|--------------|-----------------------------|------------|--------------|----------|---------------------|----------------|------------------------------|----------------------|---------------|-------------------------------|------------------------------------------|--------------|-----|------------------|---|---|
