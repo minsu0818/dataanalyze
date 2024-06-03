@@ -55,17 +55,16 @@ promotion and positively influences consumer decision-making. More positive revi
 
 
 ### 1.2 런던을 선택한 이유 
+주요국의 관광지가 호텔 사람들에게 매력이 많은 만큼 관광객들이 많을 것 같기 떄문에 주요국들 위주로만 할 것이다. 그중 런던을 선택했다<br/>
 
 유로모니터 인터내셔널이 발표한 2023년 세계에서 가장 많이 방문한 도시는 순서대로 ▲튀르키예 이스탄불 ▲영국 런던 ▲아랍에미리트 두바이 ▲튀르키예 안탈리아 ▲프랑스 파리 ▲홍콩 ▲태국 방콕 ▲미국 뉴욕 ▲멕시코 칸쿤 ▲사우디아라비아 메카다.
 
-출처 : 숙박매거진(https://www.sukbakmagazine.com)
+출처 : 숙박매거진(https://www.sukbakmagazine.com)<br/>
+런던이 2023년에 2위를 할 정도로 많은 관광객들이 많이 방문한 도시이다<br/>
 
-런던 아이(London Eye )는 런던의 템스강 사우스뱅크에 있는 캔틸레버식 대관람차이다. 2000년 개관하여 밀레니엄 휠(Millennium Wheel )이라고도 부른다.[1] 영국의 에서 가장 인기 있는 유료 관광 명소로 매년 300만 명 이상이 방문한다.
-
-출처: 위키백과 
-
-이렇듯 런던은 런던아이와 버킹엄 궁전과 같은 세계적인 관광지로 이름 나있다고 합니다. 그렇기 때문에 년에 몇백, 몇천만명의 관광객들이 다녀가는 런던에 호텔이나 모텔과 같은 숙박업이 많이 발달을 한 도시입니다. 
-숙박업이 많이 발달한 도시인 만큼 호텔도 많기 때문에  리뷰 또한 많습니다. 리뷰가 많다면 긍정적인 리뷰와 부정적인 리뷰가 둘다 많다는 건데 이것들이 호텔에 영향을 얼마나 끼치는 알아 보기 위해 저는 mobile bert를 이용한 런던 호텔 리뷰의 긍부정을 해볼까 합니다   
+런던은 오랜 역사를 자랑하는 박물관, 근엄함의 상징인 영국 왕실, 런던의 상징으로 통하는 이층버스와 튜브, 명품 뮤지컬과 축구 종주국이라는 타이틀 등 런던을 설명하는 키워드는 그야말로 무궁무진하다.<br/><br/>
+그렇기 때문에 년에 몇백, 몇천만명의 관광객들이 다녀가는 런던에 호텔이나 모텔과 같은 숙박업이 많이 발달을 한 도시다. 
+숙박업이 많이 발달한 도시인 만큼 호텔도 많기 때문에 리뷰 또한 많다. 리뷰가 많다면 긍정적인 리뷰와 부정적인 리뷰가 둘다 많다는 건데 이것들이 호텔에 영향을 얼마나 끼치는 알아 보기 위해 저는 mobile bert를 이용한 런던 호텔 리뷰의 긍부정을 해볼까 한다   
    
 ### 1.3 사용할 데이터
 https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?resource=download
@@ -85,19 +84,17 @@ https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?res
 
 ### 2.1 데이터 구성 
 * 데이터 열 이름    
-'Hotel_Address', 'Additional_Number_of_Scoring', 'Review_Date',
-       'Average_Score', 'Hotel_Name', 'Reviewer_Nationality',
-       'Negative_Review', 'Review_Total_Negative_Word_Counts',
-       'Total_Number_of_Reviews', 'Positive_Review',
-       'Review_Total_Positive_Word_Counts',
-       'Total_Number_of_Reviews_Reviewer_Has_Given', 'Reviewer_Score', 'Tags',
-       'days_since_review', 'lat', 'lng'
-
+|Hotel_Address|Additional_Number_of_Scoring|Review_Date|Average_Score|Hotel_Name|Reviewer_Nationality|Negative_Review|Review_Total_Negative_Word_Counts|Total_Number_of_Reviews|Positive_Review|Review_Total_Positive_Word_Counts|Total_Number_of_Reviews_Reviewer_Has_Given|Reviewer_Score|Tags|days_since_review|lat|lng|
+|--------------|-----------------------------|------------|--------------|----------|---------------------|----------------|------------------------------|----------------------|---------------|-------------------------------|------------------------------------------|--------------|-----|------------------|---|---|
+|호텔 주소|추가 점수 수|리뷰 작성 날짜|평균 점수|호텔 이름|리뷰어 국적|부정적 리뷰 내용|부정적 리뷰 단어 수|리뷰 총 개수|긍정적 리뷰 내용|긍정적 리뷰 단어 수|리뷰어가 작성한 총 리뷰 수|리뷰어 점수|태그|리뷰 작성 후 경과 일수|위도|경도|<br/>
 * 데이터 구조 예시
-![image](https://github.com/minsu0818/dataanalyze/assets/144076842/e3d67665-5d29-4d9b-bfc6-d9beea8a2af7)
-![image](https://github.com/minsu0818/dataanalyze/assets/144076842/1183677c-8a43-4fd7-b99c-2573106e3597)
-![image](https://github.com/minsu0818/dataanalyze/assets/144076842/996bf40e-ef32-4cd5-bcab-038c8f6393a9)
-
+|-|Hotel_Address|Additional_Number_of_Scoring|Review_Date|Average_Score|Hotel_Name|Reviewer_Nationality|Negative_Review|Review_Total_Negative_Word_Counts|Total_Number_of_Reviews|Positive_Review|Review_Total_Positive_Word_Counts|Total_Number_of_Reviews_Reviewer_Has_Given|Reviewer_Score|Tags|days_since_review|lat|lng|
+|-|--------------|-----------------------------|------------|--------------|----------|---------------------|----------------|------------------------------|----------------------|---------------|-------------------------------|------------------------------------------|--------------|-----|------------------|---|---|
+|1|s Gravesandestraat 55 Oost 1092 AA Amsterdam Netherlands|194|8/3/2017|7.7|Hotel Arena|Russia|"I am so angry that i made this post available..."|397|1403|"Only the park outside of the hotel was beautiful"|11|7|2.9|[' Leisure trip ', ' Couple ', ' Duplex Double Room ', ' Stayed 3 nights ']|0 days|52.360576|4.915968|
+|2|s Gravesandestraat 55 Oost 1092 AA Amsterdam Netherlands|194|8/3/2017|7.7|Hotel Arena|Ireland|"No Negative"|0|1403|"No real complaints the hotel was great great ..."|105|7|7.5|[' Leisure trip ', ' Couple ', ' Duplex Double Room ', ' Stayed 3 nights ']|0 days|52.360576|4.915968|
+|3|s Gravesandestraat 55 Oost 1092 AA Amsterdam Netherlands|194|7/31/2017|7.7|Hotel Arena|Australia|"Rooms are nice but for elderly a bit difficult..."|42|1403|"Location was good and staff were ok It is cut..."|21|9|7.1|[' Leisure trip ', ' Family with young children ', ' Duplex Double Room ', ' Stayed 3 nights ']|3 days|52.360576|4.915968|
+|4|s Gravesandestraat 55 Oost 1092 AA Amsterdam Netherlands|194|7/31/2017|7.7|Hotel Arena|United Kingdom|"My room was dirty and I was afraid to walk ba..."|210|1403|"Great location in nice surroundings the bar a..."|26|1|3.8|[' Leisure trip ', ' Solo traveler ', ' Duplex Double Room ', ' Stayed 3 nights ']|3 days|52.360576|4.915968|
+|5|s Gravesandestraat 55 Oost 1092 AA Amsterdam Netherlands|194|7/24/2017|7.7|Hotel Arena|New Zealand|"You When I booked with your company on line y..."|140|1403|"Amazing location and building Romantic setting"|8|3|6.7|[' Leisure trip ', ' Couple ', ' Suite ', ' Stayed 1 night ']|10 days|52.360576|4.915968|
 
 ### 2.2 데이터 시각화 
 
