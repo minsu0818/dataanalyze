@@ -185,6 +185,91 @@ promotion and positively influences consumer decision-making. More positive revi
 ### 3. 학습 데이터 만들기
 
 * 3.1 서론<br/>
-총 5만개의 데이터에는 데이터가 크기가 큰만큼 정말 다양한 평점들이 존재한다. 그렇기 때문에 확실하게 좋다,나쁘다와 같은 이분적인 평점들도 존재하지만 적당합니다,나쁘지 않습니다. 와 같이 분 확실한 기준을 가진 데이터에서 학습 데이터를 추출하는 것이 더 좋은 학습률을 가지지 않을까
+총 5만개의 데이터에는 데이터가 크기가 큰만큼 정말 다양한 평점들이 존재한다. 그렇기 때문에 확실하게 좋다,나쁘다와 같은 이분적인 평점들도 존재하지만 적당합니다,나쁘지 않습니다 와 같이 애매한 리뷰들도 존재합니다. 하지만 더 높은 학습률을 위해서는 애매한 리뷰들 보다는 이분적으로 확실하게 나뉘는 데이터들만 갖고 학습을 시키기로 했다. 
+
+| Negative_Review | Positive_Review | pn |
+|-----------------|-----------------|----|
+| The car park was small and unpleasant People ...  | The location was excellent for getting to the O2  |0|
+| We weren t told that the only spa facility op... |  No Negative    | 0  |
+|..|...|...|
+| The hotel and area around it was a building | location|  1  |<br/>
+
+데이터의 갯수는 44557개이다.<br/><br/>
+이때 pn은 평점이 8.5 이상이면 1 아니면 모두 0으로 라벨링한 것이다.<br/>
+
+0과 1의 갯수<br/>
+| pn   | 갯수 |
+|----|----|
+| 0  | 22936|
+| 1  | 21621|<br/>
+
+pn이 1인 데이터들은 평점이 8.5이상인 리뷰들만 모은 것들이기 때문에 확실하게 좋다라고 말할 수 있다. 하지만 pn이 0인 데이터들은 평점이 0점에서 부터 8.49까지들의 평점이기 때문에 범위가 너무 표괄적이여서 좋다 나쁘다라고 나누기가 애매하다. 그렇기 때문에 booking.com에서 평점 기준을 참조하여 6.5이하인 데이터들만 0으로 취급하고 나머지 중간에 끼어있는 데이터들은 날릴 것이다.   
+
+* 3.2 학습 데이터 구축<br/>
+
+| Negative_Review | Positive_Review | pn |
+|-----------------|-----------------|----|
+| Hot stuffy room air con not working properly ...   |  The bed was OK|0|
+|  Construction going on all around the hotel so... | Could control the room temperature with the A...  | 0  |
+|..|...|...|
+|No Negative| location and lovely staff |  1  |<br/>
+데이터의 갯수는 28038개이다.<br/><br/>  
+
+
+0과 1의 갯수<br/>
+| pn   | 갯수 |
+|----|----|
+| 0  | 22936|
+| 1  | 6417|<br/>
+
+pn을 새로운 기준을 새워 다시 라벨링을 해보니 데이터의 갯수가 대략 16000개가 줄었다.<br/>
+이를 통해 애매한 데이터들의 갯수가 16000개씩이나 있었다는 것을 알 수 있었다.<br/><br/>
+
+이 데이터 중 2000개만을 추출하여 학습 데이터를 구성할 것입니다.<br/>
+학습 데이터를 추출할때 2가지로 만들건데 첫번쨰 학습 데이터는 0과1을 5:5비율로 추출하고 두번쨰 학습 데이터는  0과 1의 비율을 원본 데이터의 비율 그대로 추출 할 것입니다.<br/>
+데이터에 긍정 리뷰와 부정 리뷰가 둘다 있기 때문에 둘을 negpos라는 새로운 열을 만들어 합치겠습니다. <br/><br/>
+
+
+* 학습 데이터<br/>
+  | Negpos |   pn |
+|-----------------|----|
+|We travelled from Australia and spent a total... | 0|
+|  We were put in a room at the back of the hote...|1|
+|..|...|...|
+| No Negative  Great staff and a great location ...|1|<br/>
+데이터의 갯수는 2000개이다.<br/><br/>
+
+첫 번째 데이터 <br/>
+| pn   | 갯수 |
+|----|----|
+| 0  | 1000|
+| 1  | 1000|<br/><br/>
+
+두 번째 데이터 <br/>
+| pn   | 갯수 |
+|----|----|
+| 0  | 1540|
+| 1  | 460|<br/><br/>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
 
 
