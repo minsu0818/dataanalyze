@@ -82,7 +82,6 @@ https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?res
 
 ## 2. 데이터 들여다 보기
 
-### 2.1 데이터 구성 
 * 데이터 구성 요소<br/><br/>
  이 데이터는 총 515737건이고 각 항목들은 이렇게 된다<br/><br/>
  
