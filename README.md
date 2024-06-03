@@ -64,22 +64,8 @@ promotion and positively influences consumer decision-making. More positive revi
 
 런던은 오랜 역사를 자랑하는 박물관, 근엄함의 상징인 영국 왕실, 런던의 상징으로 통하는 이층버스와 튜브, 명품 뮤지컬과 축구 종주국이라는 타이틀 등 런던을 설명하는 키워드는 그야말로 무궁무진하다.<br/><br/>
 그렇기 때문에 년에 몇백, 몇천만명의 관광객들이 다녀가는 런던에 호텔이나 모텔과 같은 숙박업이 많이 발달을 한 도시다. 
-숙박업이 많이 발달한 도시인 만큼 호텔도 많기 때문에 리뷰 또한 많다. 리뷰가 많다면 긍정적인 리뷰와 부정적인 리뷰가 둘다 많다는 건데 이것들이 호텔에 영향을 얼마나 끼치는 알아 보기 위해 저는 mobile bert를 이용한 런던 호텔 리뷰의 긍부정을 해볼까 한다   
-   
-### 1.3 사용할 데이터
-https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?resource=download
-사용할 데이터는 kaggle에 있는 515K Hotel Reviews Data in Europe의 데이터를 사용할 것입니다만 데이터의 수가 51만개로 너무나 방대하기 떄문에 5만개만 따로 추출하는 과정을 거칠 것입니다
-   
-![image](https://github.com/minsu0818/dataanalyze/assets/144076842/46104985-2120-42fa-a248-26abdccf52e1)<br/>
-
-![image](https://github.com/minsu0818/dataanalyze/assets/144076842/4a86c89a-50d9-4432-a686-24538a9c68e3)<br/>
-
-
-
-
-
-데이터를 불러와서 리뷰수가 더 많은 호텔의 리뷰에 관한 신뢰도가 높을 것 같아서, 호텔의 리뷰수의 갯수에 관해 내리차순으로 정렬하여 15개의 상위 항목만 뽑은 결과입니다. 여기 적혀있는 모든 호텔들은 런던에 존재하는 호텔들로 총 데이터의 갯수도 5만개로 적당합니다. 물론 위에 적혀있는 호텔들이 런던에 있는 호텔들의 전부는 아니지만 이 이상 호텔의 수를 늘리면 데이터의 갯수도 증가하기 떄문에 포기하고 위의 15개만의 호텔로 작업을 진행할 것입니다.
-
+숙박업이 많이 발달한 도시인 만큼 호텔도 많기 때문에 리뷰 또한 많다. 리뷰가 많다면 긍정적인 리뷰와 부정적인 리뷰가 둘다 많다는 건데 이것들이 호텔에 영향을 얼마나 끼치는 알아 보기 위해 저는 mobile bert를 이용한 런던 호텔 리뷰의 긍부정을 해볼까 한다   <br/><br/>
+ 
 ## 2. 데이터 들여다 보기
 
 * 데이터 구성 요소<br/><br/>
@@ -103,6 +89,10 @@ https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?res
 |515735|Example Address 1|194|8/3/2017|7.7|Hotel Example|Russia|"Negative review example..."|397|1403|"Positive review example..."|11|7|2.9|[' Leisure trip ', ' Couple ', ' Duplex Double Room ', ' Stayed 3 nights ']|0 days|52.360576|4.915968|
 |515736|Example Address 2|194|8/3/2017|7.7|Hotel Example|Ireland|"Negative review example..."|0|1403|"Positive review example..."|105|7|7.5|[' Leisure trip ', ' Couple ', ' Duplex Double Room ', ' Stayed 3 nights ']|0 days|52.360576|4.915968|
 |515737|Example Address 3|194|7/31/2017|7.7|Hotel Example|Australia|"Negative review example..."|42|1403|"Positive review example..."|21|9|7.1|[' Leisure trip ', ' Family with young children ', ' Duplex Double Room ', ' Stayed 3 nights ']|3 days|52.360576|4.915968|<br/>
+
+도시별로 호텔의 분포<br/><br/>
+![image](https://github.com/minsu0818/dataanalyze/assets/144076842/087e9519-7ed1-48f8-8507-13c5f2db6ebb)
+
 
 
 ### 2.2 데이터 시각화 
