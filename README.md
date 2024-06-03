@@ -94,7 +94,7 @@ https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe?res
 * 데이터 구조 예시
 
 
-|Hotel_Address|Additional_Number_of_Scoring|Review_Date|Average_Score|Hotel_Name|Reviewer_Nationality|Negative_Review|Review_Total_Negative_Word_Counts|Total_Number_of_Reviews|Positive_Review|Review_Total_Positive_Word_Counts|Total_Number_of_Reviews_Reviewer_Has_Given|Reviewer_Score|Tags|days_since_review|lat|lng|
+ ||Hotel_Address|Additional_Number_of_Scoring|Review_Date|Average_Score|Hotel_Name|Reviewer_Nationality|Negative_Review|Review_Total_Negative_Word_Counts|Total_Number_of_Reviews|Positive_Review|Review_Total_Positive_Word_Counts|Total_Number_of_Reviews_Reviewer_Has_Given|Reviewer_Score|Tags|days_since_review|lat|lng|
 |-|--------------|-----------------------------|------------|--------------|----------|---------------------|----------------|------------------------------|----------------------|---------------|-------------------------------|------------------------------------------|--------------|-----|------------------|---|---|
 |1|s Gravesandestraat 55 Oost 1092 AA Amsterdam Netherlands|194|8/3/2017|7.7|Hotel Arena|Russia|"I am so angry that i made this post available..."|397|1403|"Only the park outside of the hotel was beautiful"|11|7|2.9|[' Leisure trip ', ' Couple ', ' Duplex Double Room ', ' Stayed 3 nights ']|0 days|52.360576|4.915968|
 |2|s Gravesandestraat 55 Oost 1092 AA Amsterdam Netherlands|194|8/3/2017|7.7|Hotel Arena|Ireland|"No Negative"|0|1403|"No real complaints the hotel was great great ..."|105|7|7.5|[' Leisure trip ', ' Couple ', ' Duplex Double Room ', ' Stayed 3 nights ']|0 days|52.360576|4.915968|
