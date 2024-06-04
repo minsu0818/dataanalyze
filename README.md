@@ -102,14 +102,6 @@ promotion and positively influences consumer decision-making. More positive revi
 |--------|---------------|
 | London | 400           |<br/>
 
-런던에 있는 각 호텔들의 리뷰수 
-![image](https://github.com/minsu0818/dataanalyze/assets/144076842/48bbbeca-8599-40cc-b975-1842806466e0)<br/>
-데이터의 갯수는 26만개이다.<br/>
-
-위 그래프를 보면 데이터의 갯수도 너무 많고 쓸모 없는 데이터도 너무 많기 때문에 데이터에 기준을 정하여 추출을 하겠다.<br/><br/>
-
-
-
 런던의 호텔의 리뷰 수 상위 15개만 추출 
 |Index|Hotel_Name|Count|
 |-|----------|-----|
