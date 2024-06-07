@@ -1,6 +1,8 @@
 ![80632473_1713854345213_37_600x600](https://github.com/minsu0818/dataanalyze/assets/144076842/e8006771-f4f5-4537-ad4d-dea8d1f3208f)
 
 # MobileBERT를 활용한 런던의 호텔 리뷰 분석
+<img src="https://img.shields.io/badge/PyTorch-E34F26?style=flat-square&logo=PyTorch&logoColor=white"/></a>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/></a>
 
 ## [목차]
 ### [1. 서론]
@@ -68,16 +70,15 @@ promotion and positively influences consumer decision-making. More positive revi
  
 ## 2. 데이터 들여다 보기
 
-* 데이터 구성 요소<br/><br/>
- 이 데이터는 총 515737건이고 각 항목들은 이렇게 된다<br/><br/>
- 
+* 데이터명<br/>
+
 |Hotel_Address|Additional_Number_of_Scoring|Review_Date|Average_Score|Hotel_Name|Reviewer_Nationality|Negative_Review|Review_Total_Negative_Word_Counts|Total_Number_of_Reviews|Positive_Review|Review_Total_Positive_Word_Counts|Total_Number_of_Reviews_Reviewer_Has_Given|Reviewer_Score|Tags|days_since_review|lat|lng|
 |--------------|-----------------------------|------------|--------------|----------|---------------------|----------------|------------------------------|----------------------|---------------|-------------------------------|------------------------------------------|--------------|-----|------------------|---|---|
 |호텔 주소|추가 점수 수|리뷰 작성 날짜|평균 점수|호텔 이름|리뷰어 국적|부정적 리뷰 내용|부정적 리뷰 단어 수|리뷰 총 개수|긍정적 리뷰 내용|긍정적 리뷰 단어 수|리뷰어가 작성한 총 리뷰 수|리뷰어 점수|태그|리뷰 작성 후 경과 일수|위도|경도|<br/>
 
 
 
-* 데이터 구조 예시
+* 활용할 데이터 예시
 
 
  |-|Hotel_Address|Additional_Number_of_Scoring|Review_Date|Average_Score|Hotel_Name|Reviewer_Nationality|Negative_Review|Review_Total_Negative_Word_Counts|Total_Number_of_Reviews|Positive_Review|Review_Total_Positive_Word_Counts|Total_Number_of_Reviews_Reviewer_Has_Given|Reviewer_Score|Tags|days_since_review|lat|lng|
@@ -89,7 +90,9 @@ promotion and positively influences consumer decision-making. More positive revi
 |515737|Wurzbachgasse 21 15 Rudolfsheim F nfhaus 1150 Vienna|168|8/9/2015	|8.1|Atlantis Hotel Vienna	|Hungary|"I was in 3rd floor It didn t work Free Wife	"|13|2823|"staff was very kind"|6|1|8.3|[' Leisure trip ', ' Family with young children ', ' 2 rooms ', ' Stayed 2 nights ']|725 days|48.203745|16.335677|
 <br/>
 
-도시별로 호텔의 분포<br/><br/>
+ 이 데이터는 총 515737건이고 평점(rating)은 1점부터 10점까지 구성되어있다.<br/><br/>
+
+도시별 호텔의 분포<br/><br/>
 ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/087e9519-7ed1-48f8-8507-13c5f2db6ebb)
 
 
@@ -174,20 +177,18 @@ promotion and positively influences consumer decision-making. More positive revi
   ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/3beee1b8-8527-4bf7-9aac-b263d46efb7d)<br/>
   그래프를 봤을떄 모든 호텔들이 기간이 길어져 전체 리뷰수가 늘어남에 따라 평점이 떨어졌다는 것을 볼수 있었다. 
 
-### 3. 학습 데이터 만들기
+### 3. 학습 데이터 구축
+-----------------
+총 5만개의 데이터에는 데이터가 크기가 큰만큼 정말 다양한 평점들이 존재한다. 그렇기 때문에 확실하게 좋다,나쁘다와 같은 이분적인 평점들도 존재하지만 적당합니다,나쁘지 않습니다 와 같이 애매한 리뷰들도 존재합니다. 하지만 더 높은 학습률을 위해서는 애매한 리뷰들 보다는 이분적으로 확실하게 나뉘는 데이터들만 갖고 학습을 시키기로 했다. <br/>
 
-* 3.1 서론<br/>
-총 5만개의 데이터에는 데이터가 크기가 큰만큼 정말 다양한 평점들이 존재한다. 그렇기 때문에 확실하게 좋다,나쁘다와 같은 이분적인 평점들도 존재하지만 적당합니다,나쁘지 않습니다 와 같이 애매한 리뷰들도 존재합니다. 하지만 더 높은 학습률을 위해서는 애매한 리뷰들 보다는 이분적으로 확실하게 나뉘는 데이터들만 갖고 학습을 시키기로 했다. 
+*positive 1 / negative 0*
 
-| Negative_Review | Positive_Review | pn |
-|-----------------|-----------------|----|
-| The car park was small and unpleasant People ...  | The location was excellent for getting to the O2  |0|
-| We weren t told that the only spa facility op... |  No Negative    | 0  |
+| | Negative_Review | Positive_Review | pn |
+|-|-----------------|-----------------|----|
+|1| The car park was small and unpleasant People ...  | The location was excellent for getting to the O2  |0|
+|2| We weren t told that the only spa facility op... |  No Negative    | 0  |
 |..|...|...|
-| The hotel and area around it was a building | location|  1  |<br/>
-
-데이터의 갯수는 44557개이다.<br/><br/>
-이때 pn은 평점이 8.5 이상이면 1 아니면 모두 0으로 라벨링한 것이다.<br/>
+|44557| The hotel and area around it was a building | location|  1  |<br/>
 
 0과 1의 갯수<br/>
 | pn   | 갯수 |
@@ -195,17 +196,16 @@ promotion and positively influences consumer decision-making. More positive revi
 | 0  | 22936|
 | 1  | 21621|<br/>
 
-pn이 1인 데이터들은 평점이 8.5이상인 리뷰들만 모은 것들이기 때문에 확실하게 좋다라고 말할 수 있다. 하지만 pn이 0인 데이터들은 평점이 0점에서 부터 8.49까지들의 평점이기 때문에 범위가 너무 표괄적이여서 좋다 나쁘다라고 나누기가 애매하다. 그렇기 때문에 booking.com에서 평점 기준을 참조하여 6.5이하인 데이터들만 0으로 취급하고 나머지 중간에 끼어있는 데이터들은 날릴 것이다.   
+pn이 1인 데이터들은 평점이 8.5이상인 리뷰들만 모은 것들이기 때문에 확실하게 좋다라고 말할 수 있다. 하지만 pn이 0인 데이터들은 평점이 0점에서 부터 8.49까지들의 평점이기 때문에 범위가 너무 표괄적이여서 좋다 나쁘다라고 나누기가 애매하다. 그렇기 때문에 booking.com에서의 평점 기준을 참조하여 6.5이하인 데이터들만 0으로 취급하고 나머지 중간에 끼어있는 데이터들은 삭제할 것이다.   
 
 * 3.2 학습 데이터 구축<br/>
 
-| Negative_Review | Positive_Review | pn |
-|-----------------|-----------------|----|
-| Hot stuffy room air con not working properly ...   |  The bed was OK|0|
-|  Construction going on all around the hotel so... | Could control the room temperature with the A...  | 0  |
+|| Negative_Review | Positive_Review | pn |
+|-|-----------------|-----------------|----|
+|1| Hot stuffy room air con not working properly ...   |  The bed was OK|0|
+|2|  Construction going on all around the hotel so... | Could control the room temperature with the A...  | 0  |
 |..|...|...|
-|No Negative| location and lovely staff |  1  |<br/>
-데이터의 갯수는 28038개이다.<br/><br/>  
+|28038|No Negative| location and lovely staff |  1  |<br/>
 
 
 0과 1의 갯수<br/>
