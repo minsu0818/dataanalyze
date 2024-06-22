@@ -4,18 +4,7 @@
 <img src="https://img.shields.io/badge/PyTorch-E34F26?style=flat-square&logo=PyTorch&logoColor=white"/></a>
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/></a>
 
-## [목차]
-### [1. 서론]
- - [1.1 호텔 리뷰가 미치는 영향 ]
- - [1.2 런던을 선택한 이유  ]
-
-### [2. 데이터 들여다 보기]
- - [2.1 사용할 데이터]
- - [2.2 데이터 구성 ]
- - [2.3 데이터 시각화  ]
----
-
-## 1. 서론
+## 1. 개요
 
 ### 1.1 숙박 산업과 사용자의 리뷰
 
@@ -35,7 +24,8 @@
  위 리포트를 본다면 침체와는 거리가 먼 행보를 걷고 있다는 것을 알 수 있다.<br/>
  코로나가 종식된 2022년 부터는 숙박 산업이 회복세이 이르면서, 수요가 증가하는 전년도 대비 1.5 증가하는 현상을 보였고 다음 해인 2023년에는 26.8프로의 증가율로 꾸준한 상승을 곡선을 그리고 있다 . <br/>
  오히려 코로나라는 족쇄가 사람들의 마음에 여행이라는 두 단어를 더 강하게 각인시킨 계기가 된 것이 아닌가 라는 생각이 든다.<br/><br/>
- 숙박 산업이 상승세를 타고 있는 현재 여행을 성공적으로 마치기 위해서는 어떠한 요소가이 중요할까?<br/>
+ 숙박 산업이 상승세를 타고 있는 현재 여행을 성공적으로 마치기 위해서는 어떠한 요소가 중요할까?<br/>
+ 
  여행을 성공적으로 끝맺기 위해서는 개인의 성향에 맞는 숙소를 정는게 중요하다 생각한다. 그래서 사람들은 호텔에 대한 정보를 찾는데 트립어드바이저인 booking.com 경우에는 전세계 10만개 호텔에 100만개의 리뷰가 있다. 그렇기 때문에 사람들이 호텔 부킹하기 전에 참조를 많이한다.<br/>
  이러한 현상은 연구에서도 밝혀졌다.
  
@@ -57,14 +47,13 @@ promotion and positively influences consumer decision-making. More positive revi
 
 
 ### 1.2 런던을 선택한 이유 
-주요국의 관광지가 호텔 사람들에게 매력이 많은 만큼 관광객들이 많을 것 같기 떄문에 주요국들 위주로만 할 것이다. 그중 런던을 선택했다<br/>
+> 주요국의 관광지가 호텔 사람들에게 매력이 많은 만큼 관광객들이 많을 것 같기 떄문에 주요국들 위주로만 할 것이다. 그중 런던을 선택했다<br/>
+>
+> 유로모니터 인터내셔널이 발표한 2023년 세계에서 가장 많이 방문한 도시는 순서대로 ▲튀르키예 이스탄불 ▲영국 런던 ▲아랍에미리트 두바이 ▲튀르키예 안탈리아 ▲프랑스 파리 ▲홍콩 ▲태국 방콕 ▲미국 뉴욕 ▲멕시코 칸쿤 ▲사우디아라비아 메카다.
+>
+> 출처 : 숙박매거진(https://www.sukbakmagazine.com)<br/>
 
-유로모니터 인터내셔널이 발표한 2023년 세계에서 가장 많이 방문한 도시는 순서대로 ▲튀르키예 이스탄불 ▲영국 런던 ▲아랍에미리트 두바이 ▲튀르키예 안탈리아 ▲프랑스 파리 ▲홍콩 ▲태국 방콕 ▲미국 뉴욕 ▲멕시코 칸쿤 ▲사우디아라비아 메카다.
-
-출처 : 숙박매거진(https://www.sukbakmagazine.com)<br/>
-런던이 2023년에 2위를 할 정도로 많은 관광객들이 많이 방문한 도시이다<br/>
-
-런던은 오랜 역사를 자랑하는 박물관, 근엄함의 상징인 영국 왕실, 런던의 상징으로 통하는 이층버스와 튜브, 명품 뮤지컬과 축구 종주국이라는 타이틀 등 런던을 설명하는 키워드는 그야말로 무궁무진하다.<br/><br/>
+런던이 2023년에 2위를 할 정도로 많은 관광객들이 많이 방문한 도시이다. 런던만의 차별점으로는 오랜 역사를 자랑하는 박물관, 근엄함의 상징인 영국 왕실, 런던의 상징으로 통하는 이층버스와 튜브, 명품 뮤지컬과 축구 종주국이라는 타이틀 등이 존재한다. 이렇듯 런던을 설명하는 키워드는 그야말로 무궁무진하다.<br/><br/>
 그렇기 때문에 년에 몇백, 몇천만명의 관광객들이 다녀가는 런던에 호텔이나 모텔과 같은 숙박업이 많이 발달을 한 도시다. 
 숙박업이 많이 발달한 도시인 만큼 호텔도 많기 때문에 리뷰 또한 많다. 리뷰가 많다면 긍정적인 리뷰와 부정적인 리뷰가 둘다 많다는 건데 이것들이 호텔에 영향을 얼마나 끼치는 알아 보기 위해 저는 mobile bert를 이용한 런던 호텔 리뷰의 긍부정을 해볼까 한다   <br/><br/>
  
@@ -92,20 +81,21 @@ promotion and positively influences consumer decision-making. More positive revi
 
  이 데이터는 총 515737건이고 평점(rating)은 1점부터 10점까지 구성되어있다.<br/><br/>
 
-도시별 호텔의 분포<br/><br/>
-![image](https://github.com/minsu0818/dataanalyze/assets/144076842/087e9519-7ed1-48f8-8507-13c5f2db6ebb)
+* 도시별 호텔의 분포<br/><br/>
+![image](https://github.com/minsu0818/dataanalyze/assets/144076842/087e9519-7ed1-48f8-8507-13c5f2db6ebb)<br/>
 
 
 ### 2.1 추출 데이터<br/>
 
-도시별 호텔 데이터에서 런던을 추출하여 분석을 진행하고 자한다.<br/><br/>
 
-런던에 있는 호텔의 총 갯수<br/>
+* 런던에 있는 호텔의 총 갯수<br/>
+
 | City   | Unique Hotels |
 |--------|---------------|
 | London | 400           |<br/>
 
-런던의 호텔의 리뷰 수 상위 15개만 추출 
+* 런던의 호텔의 리뷰 수 상위 15개만 추출 <br/>
+  
 |Index|Hotel_Name|Count|
 |-|----------|-----|
 |1|Britannia International Hotel Canary Wharf|4789|
@@ -124,12 +114,14 @@ promotion and positively influences consumer decision-making. More positive revi
 |14|Blakemore Hyde Park|2178|
 |15|Park Plaza London Riverbank|2167|<br/>
 
-위 15개의 호텔들의 리뷰수 총합이 대략 5만개로 학습을 진행하기 적합한 갯수이다. <br/><br/>
+* 호텔 위치 <br/>
 
-호텔 위치 <br/>
 ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/444aba63-7d37-43ad-a4eb-c4df88ebb01a)<br/>
-겹친 지점 상세 보기 <br/>
-![image](https://github.com/minsu0818/dataanalyze/assets/144076842/fcb15d38-846e-4797-a5aa-c32368c2c87a)
+
+* 겹친 지점 상세 보기 <br/>
+![image](https://github.com/minsu0818/dataanalyze/assets/144076842/fcb15d38-846e-4797-a5aa-c32368c2c87a)<br/>
+
+전체 400개의 호텔중 리뷰 수 상위 15개 호텔들의 리뷰수 총합이 대략 5만개로 학습을 진행하기 적합한 갯수여서 추출 데이터로 선정했다.
 
 
 
@@ -177,28 +169,26 @@ promotion and positively influences consumer decision-making. More positive revi
   ![image](https://github.com/minsu0818/dataanalyze/assets/144076842/3beee1b8-8527-4bf7-9aac-b263d46efb7d)<br/>
   그래프를 봤을떄 모든 호텔들이 기간이 길어져 전체 리뷰수가 늘어남에 따라 평점이 떨어졌다는 것을 볼수 있었다. 
 
-### 3. 학습 데이터 구축
------------------
+## 3. 학습 데이터 구축
+
 총 5만개의 데이터에는 데이터가 크기가 큰만큼 정말 다양한 평점들이 존재한다. 그렇기 때문에 확실하게 좋다,나쁘다와 같은 이분적인 평점들도 존재하지만 적당합니다,나쁘지 않습니다 와 같이 애매한 리뷰들도 존재합니다. 하지만 더 높은 학습률을 위해서는 애매한 리뷰들 보다는 이분적으로 확실하게 나뉘는 데이터들만 갖고 학습을 시키기로 했다. <br/>
 
-*positive 1 / negative 0*
-
+### 3-1.전체 분석 데이터 
+*negative 0 /positive 1* 
 | | Negative_Review | Positive_Review | pn |
 |-|-----------------|-----------------|----|
 |1| The car park was small and unpleasant People ...  | The location was excellent for getting to the O2  |0|
 |2| We weren t told that the only spa facility op... |  No Negative    | 0  |
 |..|...|...|
-|44557| The hotel and area around it was a building | location|  1  |<br/>
+|44557| The hotel and area around it was a building | location|  1  |<br/><br/>
 
-0과 1의 갯수<br/>
-| pn   | 갯수 |
-|----|----|
-| 0  | 22936|
-| 1  | 21621|<br/>
+![image](https://github.com/minsu0818/dataanalyze/assets/144076842/1e83633a-f602-4962-8291-b9af104bed2d)
 
-pn이 1인 데이터들은 평점이 8.5이상인 리뷰들만 모은 것들이기 때문에 확실하게 좋다라고 말할 수 있다. 하지만 pn이 0인 데이터들은 평점이 0점에서 부터 8.49까지들의 평점이기 때문에 범위가 너무 표괄적이여서 좋다 나쁘다라고 나누기가 애매하다. 그렇기 때문에 booking.com에서의 평점 기준을 참조하여 6.5이하인 데이터들만 0으로 취급하고 나머지 중간에 끼어있는 데이터들은 삭제할 것이다.   
 
-* 3.2 학습 데이터 구축<br/>
+
+positive 인 데이터들은 평점이 8.5이상인 리뷰들만 모은 것들이기 때문에 확실하게 좋다라고 말할 수 있다. 하지만 negative인 데이터들은 평점이 0점에서 부터 8.49까지들의 평점이기 때문에 범위가 너무 표괄적이여서 좋다 나쁘다라고 나누기가 애매하다. 그렇기 때문에 booking.com에서의 평점 기준을 참조하여 6.5이하인 데이터들만 negative 로 취급하고 나머지 중간에 끼어있는 데이터들은 삭제할 것이다.   
+
+###  3.2 학습 데이터 구축<br/>
 
 || Negative_Review | Positive_Review | pn |
 |-|-----------------|-----------------|----|
@@ -208,45 +198,30 @@ pn이 1인 데이터들은 평점이 8.5이상인 리뷰들만 모은 것들이�
 |28038|No Negative| location and lovely staff |  1  |<br/>
 
 
-0과 1의 갯수<br/>
-| pn   | 갯수 |
-|----|----|
-| 0  | 22936|
-| 1  | 6417|<br/>
-
-pn을 새로운 기준을 새워 다시 라벨링을 해보니 데이터의 갯수가 대략 16000개가 줄었다.<br/>
-이를 통해 애매한 데이터들의 갯수가 16000개씩이나 있었다는 것을 알 수 있었다.<br/><br/>
-
-이 데이터 중 2000개만을 추출하여 학습 데이터를 구성할 것이다.<br/>
-학습 데이터를 추출할때 2가지로 만들건데 첫번쨰 학습 데이터는 0과1을 5:5비율로 추출하고 두번쨰 학습 데이터는  0과 1의 비율을 원본 데이터의 비율 그대로 추출 할 것이다.<br/>
-데이터에 긍정 리뷰와 부정 리뷰가 둘다 있기 때문에 둘을 negpos라는 새로운 열을 만들어 합칠 것이다. <br/><br/>
+![image](https://github.com/minsu0818/dataanalyze/assets/144076842/f891195a-5393-40c3-a712-0de846419649)<br/>
 
 
-* 학습 데이터<br/>
+이 데이터 중 2000개만을 추출하여 학습 데이터를 구성할 것이다. 학습 데이터를 추출할때 2가지로 만들건데 첫번쨰 학습 데이터는 negative과 positive 을 5:5비율로 추출하고 두번쨰 학습 데이터는  0과 1의 비율을 원본 데이터의 비율 그대로 추출 할 것이다. 마지막으로 데이터에 긍정 리뷰와 부정 리뷰가 둘다 있기 때문에 둘을 negpos라는 새로운 열을 만들어 합칠 것이다. <br/><br/>
 
 
-| Negpos |   pn |
-|-----------------|----|
-|We travelled from Australia and spent a total... | 0|
-|  We were put in a room at the back of the hote...|1|
-|..|...|...|
-| No Negative  Great staff and a great location ...|1|<br/>
+###  3.3 학습 데이터 <br/>
+
+
+|| Negpos |   pn |
+|-|-----------------|----|
+|1|We travelled from Australia and spent a total... | 0|
+|2|  We were put in a room at the back of the hote...|1|
+|...|...|...|
+|2000| No Negative  Great staff and a great location ...|1|<br/>
 
 
 
-데이터의 갯수는 2000개이다.<br/><br/>
 
-첫 번째 데이터 <br/>
-| pn   | 갯수 |
-|----|----|
-| 0  | 1000|
-| 1  | 1000|<br/><br/>
 
-두 번째 데이터 <br/>
-| pn   | 갯수 |
-|----|----|
-| 0  | 1540|
-| 1  | 460|<br/><br/>
+![image](https://github.com/minsu0818/dataanalyze/assets/144076842/d97098a7-daa6-4dff-8a20-5b7a89613c92)
+![image](https://github.com/minsu0818/dataanalyze/assets/144076842/c65bf2c9-8862-436f-bf91-19017e67911e)
+
+
 
 
 
