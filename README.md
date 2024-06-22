@@ -223,11 +223,40 @@ positive 인 데이터들은 평점이 8.5이상인 리뷰들만 모은 것들�
 
 
 
+## 4. MobileBert 학습 결과
+### 개발환경
 
+<img src="https://img.shields.io/badge/python-%233776AB.svg?&style=for-the-badge&logo=python&logoColor=white" /><img src="https://img.shields.io/badge/pycharm-%23000000.svg?&style=for-the-badge&logo=pycharm&logoColor=white" />
+
+### 패키지
+
+<img src="https://img.shields.io/badge/pandas-%23150458.svg?&style=for-the-badge&logo=pandas&logoColor=white" /><img src="https://img.shields.io/badge/pytorch-%23EE4C2C.svg?&style=for-the-badge&logo=pytorch&logoColor=white" /><img src="https://img.shields.io/badge/tensorflow-%23FF6F00.svg?&style=for-the-badge&logo=tensorflow&logoColor=white" /><img src="https://img.shields.io/badge/numpy-%23013243.svg?&style=for-the-badge&logo=numpy&logoColor=white" />
 
 
 
   
+### 4.1 학습 결과
+| 첫 번째 학습 데이터| epoch | 0  | 1  | 2  | 3  |두 번째 학습 데이터| epoch | 0  | 1  | 2  | 3  |
+|-----|-----|------|-----|------|-----|-----|------|-----|------|-----|-----|
+|training loss | 138952.63 | 0.32 | 0.93 | 0.2 | | training loss |25534.58|22.52| 7.9 | 1.91| 
+|Validation accuracy | 0.895 | 0.89 | 0.905 | 0.9 | | Validation accuracy | 0.775 | 0.815 |0.885 | 0.865 | <br/>
+
+![image](https://github.com/minsu0818/dataanalyze/assets/144076842/fe2dac4d-a065-4560-9cd7-e8a10c605259)<br/>
+ 첫번째 모델
+
+
+### 4.2 학습 모델을 원본 데이터에 적용한 결과값<br/>
+![image](https://github.com/minsu0818/dataanalyze/assets/144076842/5266a16c-1ff5-4907-9a56-fe8df8178a08)![image](https://github.com/minsu0818/dataanalyze/assets/144076842/f049e815-3f2f-4a8f-8762-9eebb464ecb5)<br/>
+
+## 5. 느낀점 및 배운점
+
+
+
+
+
+
+
+
 
 
 
