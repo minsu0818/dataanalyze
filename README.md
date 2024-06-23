@@ -58,6 +58,8 @@ promotion and positively influences consumer decision-making. More positive revi
  
 ## 2. 데이터 들여다 보기
 
+[Hotel Reviews 데이터셋](https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe)<br/>
+
 * 데이터명<br/>
 
 |Hotel_Address|Additional_Number_of_Scoring|Review_Date|Average_Score|Hotel_Name|Reviewer_Nationality|Negative_Review|Review_Total_Negative_Word_Counts|Total_Number_of_Reviews|Positive_Review|Review_Total_Positive_Word_Counts|Total_Number_of_Reviews_Reviewer_Has_Given|Reviewer_Score|Tags|days_since_review|lat|lng|
