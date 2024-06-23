@@ -218,8 +218,7 @@ positive 인 데이터들은 평점이 8.5이상인 리뷰들만 모은 것들�
 
 
 
-![image](https://github.com/minsu0818/dataanalyze/assets/144076842/d97098a7-daa6-4dff-8a20-5b7a89613c92)
-![image](https://github.com/minsu0818/dataanalyze/assets/144076842/c65bf2c9-8862-436f-bf91-19017e67911e)
+![image](https://github.com/minsu0818/dataanalyze/assets/144076842/d97098a7-daa6-4dff-8a20-5b7a89613c92)![image](https://github.com/minsu0818/dataanalyze/assets/144076842/c65bf2c9-8862-436f-bf91-19017e67911e)
 
 
 
